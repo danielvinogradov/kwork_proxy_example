@@ -32,7 +32,7 @@
       },
 
       sendPost() {
-        TodosAPI.postData(55)
+        TodosAPI.postData({ title: 'some title', body: 'some body', userId: 444 })
             .then(res => res.json())
             .then(json => this.req = json);
       }
