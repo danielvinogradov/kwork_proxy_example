@@ -30,7 +30,7 @@ app.post(TODOS_URI, async (req, res) => {
 })
 
 app.patch('/aaa', (req, res) => {
-    res.status(401);
+    res.status(401).send();
 });
 
 app.listen(PORT, () => {
